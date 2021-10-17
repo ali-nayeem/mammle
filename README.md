@@ -11,6 +11,9 @@ For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.
 3. Maximize sum-of-pairs (SP)
 4. Minimize number of gaps (GAP)
 
+![alt tag](https://github.com/ali-nayeem/mammle/blob/macos/diagram/ma-muscle.png)
+
+
 ## Installation 
 The current version of MAMMLE has been developed and tested entirely on Linux and MAC. 
 
