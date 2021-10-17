@@ -7,7 +7,7 @@
 </figure>
 
 ## Multiobjective Application-aware MUSCLE
-For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.com/ali-nayeem/muscle_extesion) by embedding the following four objective functions within the iterattive phase of MUSCLE:
+For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.com/ali-nayeem/muscle_extesion) by embedding the following four objective functions, identified based on their better correlation to the tree accuracy, within the iterative phase of MUSCLE:
 1. Maximize similarity for columns containing gaps (SIMG)
 2. Maximize similarity for columns containing no gaps (SIMNG)
 3. Maximize sum-of-pairs (SP)
