@@ -1,17 +1,17 @@
 # MAMMLE: Phylogeny estimation based on multiobjective application-aware MUSCLE and maximum likelihood ensemble
 **MAMMLE** is a software framework for inferring better phylogenetic trees from unaligned sequences by hybridizing MUSCLE with multiobjective optimization strategy and leveraging multiple Maximum Likelihood hypotheses. MAMMLE may offer a significant improvement (upto 27% in our experiments on BAliBASE 3.0) in tree accuracy over MUSCLE.
 
-![alt tag](https://github.com/ali-nayeem/mammle/blob/macos/diagram/workflow.png)
-
+<img src="https://github.com/ali-nayeem/mammle/blob/macos/diagram/workflow.png" width="800">
 
 ## Multiobjective Application-aware MUSCLE
-For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.com/ali-nayeem/muscle_extesion) by embedding the following four objectives as the objective functions for the iterattive phase of MUSCLE:
+For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.com/ali-nayeem/muscle_extesion) by embedding the following four objective functions within the iterattive phase of MUSCLE:
 1. Maximize similarity for columns containing gaps (SIMG)
 2. Maximize similarity for columns containing no gaps (SIMNG)
 3. Maximize sum-of-pairs (SP)
 4. Minimize number of gaps (GAP)
 
-![alt tag](https://github.com/ali-nayeem/mammle/blob/macos/diagram/ma-muscle.png)
+<img src="https://github.com/ali-nayeem/mammle/blob/macos/diagram/ma-muscle.png" width="800">
+
 
 
 ## Installation 
