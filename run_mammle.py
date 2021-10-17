@@ -4,6 +4,8 @@ import os
 from core.mo_aw_muscle import MO_MSA_MUSCLE
 from core.fasttree_ml import ML_TREE_FASTTREE
 from core.ensemble_summary import GREEDY_CONSENSUS
+from util.read_aln import ReadSeqsAndLabels
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     # parser.add_argument('integers', metavar='N', type=int, nargs='+',
@@ -23,13 +25,18 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    print(dir_path)
-    print(args.input_sequences)
+    #print(dir_path)
     if args.output_dir[0] != '/' or args.output_dir[0] != '~':
         full_output_dir = dir_path + '/' + args.output_dir
+    
+    print("Start computing tree on %s" % args.input_sequences)
+    input_labels, input_seqs = ReadSeqsAndLabels(args.input_sequences)  
     mo_aw_muscle = MO_MSA_MUSCLE(dir_path, args.input_sequences, full_output_dir, args.weight_vectors, args.thread_count)
     data, tmp_dir, no_msa = mo_aw_muscle.execute()
     ml_fasttree = ML_TREE_FASTTREE(dir_path, tmp_dir, no_msa, args.thread_count)
     ml_fasttree.execute()
-    greedy = GREEDY_CONSENSUS(dir_path, tmp_dir, no_msa, data,  full_output_dir)
+    greedy = GREEDY_CONSENSUS(dir_path, tmp_dir, no_msa, data,  full_output_dir, input_labels)
     greedy.execute()
+
+    #TODO
+    #Error/exception handling routines
