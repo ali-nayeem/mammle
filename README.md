@@ -37,5 +37,17 @@ Run
 python run_mammle.py --help
 ``` 
 
-to see PASTA's various options and descriptions of how they work. 
+to see MAMMLE's various options and descriptions of how they work. For example:
+
+```bash
+  --thread THREAD_COUNT, -t THREAD_COUNT
+                        Number of threads (default: 1)
+  --input INPUT_SEQUENCES, -i INPUT_SEQUENCES
+                        Input unaligned sequences in FASTA format
+  --out OUTPUT_DIR, -o OUTPUT_DIR
+                        Output tree sequences in NEWICK format
+  --weight WEIGHT_VECTORS, -w WEIGHT_VECTORS
+                        Input weight vectors in CSV format (default: 30 weight
+                        vectors in weight/weights4D-30.csv)
+``` 
 
