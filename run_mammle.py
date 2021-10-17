@@ -1,5 +1,4 @@
 import argparse
-#import components
 import os 
 from core.mo_aw_muscle import MO_MSA_MUSCLE
 from core.fasttree_ml import ML_TREE_FASTTREE
@@ -10,9 +9,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     # parser.add_argument('integers', metavar='N', type=int, nargs='+',
     #                    help='an integer for the accumulator')
-    parser.add_argument('--sum', dest='accumulate', action='store_const',
-                    const=sum, default=max,
-                    help='sum the integers (default: find the max)')
+    
     parser.add_argument('--thread', '-t', dest='thread_count',type=int, default=1,
                     help='Number of threads (default: 1)')
     parser.add_argument('--input', '-i', dest='input_sequences',type=str, default=1, required=True,
@@ -20,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument('--out', '-o', dest='output_dir',type=str, default=1, required=True,
                     help='Output tree sequences in NEWICK format')
     parser.add_argument('--weight', '-w', dest='weight_vectors',type=str, default=None,
-                    help='Input weight vectors in CSV format (default: 30 weight vectors)')
+                    help='Input weight vectors in CSV format (default: 30 weight vectors in weight/weights4D-30.csv)')
                                 
 
     args = parser.parse_args()
