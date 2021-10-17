@@ -27,7 +27,7 @@ Open a terminal and clone latest MAMMLE from our [github repository](https://git
 ```bash
 git clone https://github.com/ali-nayeem/mammle.git
 ```   
-##Execution
+## Execution
 
 To run MAMMLE using the command-line:
 
