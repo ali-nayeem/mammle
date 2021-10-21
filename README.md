@@ -24,13 +24,21 @@ The current version of MAMMLE has been developed and tested entirely on Linux an
 You need to have:
 
 - [Python](https://www.python.org) (version 3.7 or later) with numpy package
+- libpython2.7 (install via ```apt-get install libpython2.7```)
 - [Perl](https://www.perl.org/get.html) (version 5.15 or later)
 
 Open a terminal and clone latest MAMMLE from our [github repository](https://github.com/ali-nayeem/mammle). For example you can use: 
 
 ```bash
 git clone https://github.com/ali-nayeem/mammle.git
-```   
+cd mammle
+```  
+Give executive permission to the binaries 
+
+```bash
+chmod +x bin/*
+```  
+
 ## Execution
 
 To run MAMMLE using the command-line:
