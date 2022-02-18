@@ -2,7 +2,7 @@
 **MAMMLE** is a software framework for inferring better phylogenetic trees from unaligned sequences by hybridizing MUSCLE with multiobjective optimization strategy and leveraging multiple Maximum Likelihood hypotheses. MAMMLE may offer a significant improvement (upto 27% in our experiments on BAliBASE 3.0) in tree accuracy over MUSCLE.
 
 <figure>
-  <img src="https://github.com/ali-nayeem/mammle/blob/macos/diagram/workflow.png" alt="Trulli" style="width:80%">
+  <img src="https://github.com/ali-nayeem/mammle/blob/macos/diagram/workflow-v2.png" alt="Trulli" style="width:80%">
   <figcaption>Fig.1: Simplified phylogenetic reconstruction pipeline of MAMMLE framework. The components open to modification are marked with a blue shade.</figcaption>
 </figure>
 
