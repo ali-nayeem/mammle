@@ -1,0 +1,71 @@
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 581 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 25.97%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 581
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: WAG
+Using empirical base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/Users/ali_nayeem/NetBeansProjects/raxmlHPC-PTHREADS-AVXp -m PROTCATWAGF -n BB12001 -s /Users/ali_nayeem/PycharmProjects/pasta-extension/scripts/output/muscle-balibase/muscle-output/BB12001.aln -w /Users/ali_nayeem/PycharmProjects/pasta-extension/scripts/output/muscle-balibase/muscle-output -p 123456789 -T 4 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.061 0.028 0.066 0.058 0.019 0.038 0.047 0.083 0.020 0.049 0.088 0.050 0.022 0.051 0.050 0.078 0.051 0.021 0.054 0.063 
+
+Inference[0]: Time 2.790532 CAT-based likelihood -11288.702696, best rearrangement setting 5
+alpha[0]: 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -11759.379042 tree written to file /Users/ali_nayeem/PycharmProjects/pasta-extension/scripts/output/muscle-balibase/muscle-output/RAxML_result.BB12001
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -11759.379042 .... 
+
+Final GAMMA-based Score of best tree -11759.379042
+
+Program execution info written to /Users/ali_nayeem/PycharmProjects/pasta-extension/scripts/output/muscle-balibase/muscle-output/RAxML_info.BB12001
+Best-scoring ML tree written to: /Users/ali_nayeem/PycharmProjects/pasta-extension/scripts/output/muscle-balibase/muscle-output/RAxML_bestTree.BB12001
+
+Overall execution time: 4.089292 secs or 0.001136 hours or 0.000047 days
+

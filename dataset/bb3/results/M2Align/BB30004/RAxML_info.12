@@ -1,0 +1,81 @@
+
+
+IMPORTANT WARNING: Sequences 1buc_A and Q06319 are exactly identical
+
+IMPORTANT WARNING
+Found 1 sequence that is exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004/12.aln.reduced
+
+
+This is RAxML version 8.2.11 released by Alexandros Stamatakis on June 2017.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 852 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 42.58%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 852
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: WAG
+Using empirical base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/ali_nayeem/MyProjects/pasta-exp/scripts/raxmlHPC-PTHREADS-AVX -m PROTCATWAGF -n 12 -s /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004/12.aln -w /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004 -p 123456789 -T 5 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.099 0.052 0.036 0.046 0.015 0.043 0.066 0.087 0.018 0.059 0.092 0.062 0.029 0.041 0.035 0.061 0.056 0.010 0.032 0.061 
+
+Inference[0]: Time 16.512763 CAT-based likelihood -31924.746117, best rearrangement setting 5
+alpha[0]: 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -32677.743422 tree written to file /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004/RAxML_result.12
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -32677.743422 .... 
+
+Final GAMMA-based Score of best tree -32677.743422
+
+Program execution info written to /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004/RAxML_info.12
+Best-scoring ML tree written to: /home/ali_nayeem/MyProjects/pasta-exp/scripts/output/muscle-balibase/m2align-raxml/BB30004/RAxML_bestTree.12
+
+Overall execution time: 38.280407 secs or 0.010633 hours or 0.000443 days
+
