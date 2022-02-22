@@ -18,6 +18,30 @@ For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.
   <figcaption>Fig.2: High-level workflow of multiobjective application-aware MUSCLE for a single weight vector. Steps (3.4 to 3.6) added/modified on the original MUSCLE are marked with red color. This figure is modification of the original image taken from https://doi.org/10.1093/nar/gkh340.</figcaption>
 </figure>
 
+## Software Commands
+Below we provide the software commands used for out experimentation. Please note the provided commands of MUSCLE and RAxML only represent the current components of MAMMLE framework. One can easily replace these components with other appropriate tools/commands which is the main strength of this framework.
+
+- MUSCLE (version 3.8.1551) command
+```
+muscle -in [unaligned_sequences] -out  [output_name] -maxiters 20
+```
+- RAxML (version 8.2.11) command for reference tree
+```
+raxml -f a -m PROTGAMMAAUTO -s [reference_msa]  -n [output_name]  -p 1234 -x 1234 -#100 -T [thread_count]
+```
+- RAxML (version 8.2.11) command for ML tree
+```
+raxml -m PROTCATWAGF -n [output_name]  -s [estimated_msa]   -p 123456789 -T [thread_count] 	
+```
+- MAFFT (version 7.490) command
+```
+linsi --auto --amino  --thread [thread_count]  [unaligned_fasta] > [output_name]
+```
+- M2Align (version 4.13.1) command
+```
+java -cp [path_to_jar] org.uma.khaos.m2align.runner.M2AlignBALIBASERunner [balibase_instance] [path_to_balibase_data] [number_of_evaluations:15000] [population_size:30] [thread_count]
+```
+
 ## Installation 
 The current version of MAMMLE has been developed and tested entirely on Linux and MAC. 
 
