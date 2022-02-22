@@ -19,7 +19,7 @@ For MAMMLE, we develop [Multiobjective Application-aware MUSCLE](https://github.
 </figure>
 
 ## Software Commands
-Below we provide the software commands used for out experimentation. Please note the provided commands of MUSCLE and RAxML only represent the current components of MAMMLE framework. One can easily replace these components with other appropriate tools/commands which is the main strength of this framework.
+Below we provide the software commands used for our experimentation. Please note the provided commands of MUSCLE and RAxML only represent the current components of MAMMLE framework. One can easily replace these components with other appropriate tools/commands which is the main strength of this framework.
 
 - MUSCLE (version 3.8.1551) command
 ```
